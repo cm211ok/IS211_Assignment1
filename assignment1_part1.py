@@ -1,8 +1,16 @@
 
-def list_divide(numbers, divide):
+def list_divide(numbers, divide=2):
+    count_ = 0
+    for i in numbers:
+        if i % divide == 0:
+            count_ += 1
+    return count_
     """
     The function returns the number of elements in the numbers list that are divisibleby divide
     """
+    pass
+
+class ListDivideException:
     pass
 
 def test_list_divide():
